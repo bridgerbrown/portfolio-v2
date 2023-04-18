@@ -40,7 +40,7 @@ function About() {
 
   return(
     <>
-      <section className='Bio-Container' id="bio">
+      <section className='bio-Container' id="bio">
           <div className='section-line'>
             <Image 
               src={"/star1.png"} 
@@ -58,7 +58,7 @@ function About() {
               alt="swirl icon"
               />
           </div>
-          <div className="Bio">  
+          <div className="bio">  
               <Image 
                 src={"/cortona-headshot.png"}
                 alt="bridger headshot image" 
@@ -67,7 +67,7 @@ function About() {
                 width={352}
                 height={352}
                 />
-              <div className="Bio-items reveal-right">                    
+              <div className="bio-items reveal-right">                    
                   <p>Hello, my name is Bridger Brown and I am a Front-End Web developer and designer based out of Portland, Oregon.
                   <br></br>
                       <br></br> 
@@ -83,7 +83,7 @@ function About() {
                     <button>Education</button>
                     <button>Music</button>
                   </div> */}
-                  <div className='resume-section'>
+                  <div className='bio-buttons'>
                     <a href='https://www.linkedin.com/in/bridger-brown/' target="_blank" rel="noopener noreferrer" >
                       <Image 
                         src={"/LinkedIN_black.png"} 

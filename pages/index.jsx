@@ -119,17 +119,17 @@ function Home() {
             end: 40,
             func: () => {
             // centerSphere.rotation.y += 0.002;
-              const distance = 0 + window.scrollY / 25;
+              const distance = 0 + window.scrollY / 60;
         
               orbitingSpheres[0].position.set(distance * Math.sin((2 * Math.PI * 0) / 3), 0, distance * Math.cos((2 * Math.PI * 0) / 3));
               orbitingSpheres[1].position.set(distance * Math.sin((2 * Math.PI * 1) / 3), 0, distance * Math.cos((2 * Math.PI * 1) / 3));
               orbitingSpheres[2].position.set(distance * Math.sin((2 * Math.PI * 2) / 3), 0, distance * Math.cos((2 * Math.PI * 2) / 3));
     
-              camera.position.x = lerp(40, 100, scalePercent(0, 40));
-              camera.position.y = lerp(40, 180, scalePercent(0, 40));
+              camera.position.x = lerp(30, 50, scalePercent(0, 40));
+              camera.position.y = lerp(30, 70, scalePercent(0, 40));
               camera.position.z = lerp(40, 40, scalePercent(0, 40));
     
-              centerSphere.rotation.x = lerp(0, 3, scalePercent(0, 40));
+              centerSphere.rotation.x = lerp(6, 9, scalePercent(0, 40));
             },
           })
           animationScripts.push({
@@ -138,7 +138,7 @@ function Home() {
             func: () => {
               // centerSphere.rotation.y += 0.002;
               const stoppingDistance = 25
-              let distance = (0 + window.scrollY / 25) * (1 - scalePercent(40, 101))
+              let distance = (0 + window.scrollY / 60) * (1 - scalePercent(40, 101))
               if (distance < stoppingDistance) {
                 distance = stoppingDistance
               }
@@ -147,10 +147,10 @@ function Home() {
               orbitingSpheres[1].position.set(distance * Math.sin((2 * Math.PI * 1) / 3), 0, distance * Math.cos((2 * Math.PI * 1) / 3));
               orbitingSpheres[2].position.set(distance * Math.sin((2 * Math.PI * 2) / 3), 0, distance * Math.cos((2 * Math.PI * 2) / 3));
     
-              camera.position.x = lerp(100, 60, scalePercent(40, 80));
-              camera.position.y = lerp(180, 50, scalePercent(40, 80));
+              camera.position.x = lerp(50, 40, scalePercent(40, 85));
+              camera.position.y = lerp(70, 10, scalePercent(40, 85));
     
-              centerSphere.rotation.x = lerp(3, 6, scalePercent(40, 101));
+              centerSphere.rotation.x = lerp(9, 12, scalePercent(40, 101));
             },
           })
     
@@ -197,16 +197,20 @@ function Home() {
     return(
         <>
             <main className="Home fade" id="home" ref={refScrollUp}>
-                <canvas id="canvasBg"></canvas>
+              <canvas id="canvasBg"></canvas>
+              <div className="top-bg">
                 <Navbar /> 
                 <GoTop />
                 <Landing />
+              </div>
+              <div className="blur-bg">
                 <About />
                 <Skills />
                 <Projects />
                 <Design />
                 <Contact />
                 <Footer />
+              </div>
             </main>            
         </>
     )
