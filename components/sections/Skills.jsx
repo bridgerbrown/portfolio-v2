@@ -13,7 +13,11 @@ function Skills() {
                         height={25}
                         alt="swirl icon"
                     />
-                    <h3 className='Section-Headers' id="skills-header">Skills</h3>
+                    
+                    <h3 className='section-title' id="skills-header">
+                        Skills
+                    </h3>
+                    
                     <Image 
                         src={"/star1.png"} 
                         className="swirls"

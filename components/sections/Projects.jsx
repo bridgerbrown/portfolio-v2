@@ -11,14 +11,18 @@ function Projects() {
         <>
             <section className='Section-Container' id="projects">
                 <div className='section-line'>
-                <Image 
-                    src={"/star1.png"} 
-                    className="swirls"
-                    width={25}
-                    height={25}
-                    alt="swirl icon"
-                />
-                    <h3 className='Section-Headers'>Projects</h3>
+                    <Image 
+                        src={"/star1.png"} 
+                        className="swirls"
+                        width={25}
+                        height={25}
+                        alt="swirl icon"
+                    />
+
+                    <h3 className='section-title'>
+                        Projects
+                    </h3>
+
                     <Image 
                         src={"/star1.png"} 
                         className="swirls"
@@ -27,7 +31,7 @@ function Projects() {
                         alt="swirl icon"
                     />
                 </div>
-                <div className='Work-Container'>
+                <div className='all-projects-container'>
                     <RicochetProductionsProject />
                     <PayCats />
                     <EcommerceProject />

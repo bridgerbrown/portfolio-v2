@@ -5,18 +5,18 @@ function MartiniShotWebsite() {
 return(
     <>
         <div className='project-single-container'>
-            <div className='project-img'>
+            <div className='project-image-container'>
                 <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
                     <Image 
                         src={'/martini-shot-preview.jpg'}
                         alt="martini shot project preview" 
-                        className='Work-Preview reveal-left'
+                        className='project-image reveal-left'
                         width={1280}
                         height={960}
                         />
                 </a>
             </div>
-            <div className='Work-Details reveal-right'>
+            <div className='project-details reveal-right'>
                 <div className='project-text'>
                     <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
                         <h4 className='project-title'>Martini Shot Podcast Website</h4>

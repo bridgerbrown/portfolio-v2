@@ -20,7 +20,11 @@ function Contact() {
                 height={25}
                 alt="swirl icon"
               />
-              <h3 className='Section-Headers'>Contact</h3>
+
+              <h3 className='section-title'>
+                Contact
+              </h3>
+
               <Image 
                 src={"/star1.png"} 
                 className="swirls"

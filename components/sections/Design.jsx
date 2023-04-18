@@ -33,7 +33,11 @@ function Design() {
                         height={25}
                         alt="swirl icon"
                     />
-                    <h3 className='Section-Headers'>Design</h3>
+
+                    <h3 className='section-title'>
+                        Design
+                    </h3>
+
                     <Image 
                         src={"/star1.png"} 
                         className="swirls"

@@ -48,8 +48,12 @@ function About() {
               width={25}
               height={25}
               alt="swirl icon"
-              />
-            <h3 className='Section-Headers'>About</h3>
+            />
+
+            <h3 className='section-title'>
+              About
+            </h3>
+
             <Image 
               src={"/star1.png"} 
               className="swirls"
