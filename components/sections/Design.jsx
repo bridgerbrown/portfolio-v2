@@ -24,7 +24,7 @@ function Design() {
 
     return(
         <>
-            <section className='Section-Container' id="design">
+            <section className='section-container' id="design">
                 <div className='section-line'>
                     <Image 
                         src={"/star1.png"} 

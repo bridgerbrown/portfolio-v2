@@ -4,7 +4,7 @@ import Image from 'next/image'
 function MartiniShotWebsite() {
 return(
     <>
-        <div className='project-single-container'>
+        <div className='project-last-single-container'>
             <div className='project-image-container'>
                 <a href='https://www.martinishotpodcast.com' target="_blank" rel="noopener noreferrer">
                     <Image 

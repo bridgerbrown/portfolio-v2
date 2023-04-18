@@ -9,7 +9,7 @@ import RicochetProductionsProject from './project-previews/RicochetProductions'
 function Projects() {
     return(
         <>
-            <section className='Section-Container' id="projects">
+            <section className='section-container' id="projects">
                 <div className='section-line'>
                     <Image 
                         src={"/star1.png"} 

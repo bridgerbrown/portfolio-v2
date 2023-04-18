@@ -30,7 +30,7 @@ canvas {
 }
 
 .top-bg{
-    background-image: linear-gradient(#14141467 0%, var(--module-bg));
+    background-image: linear-gradient(#1414144b 0%, var(--module-bg));
     padding-bottom: 20rem;
 }
 
@@ -51,14 +51,15 @@ body {
 --btn-text-color: black;
 --invert: invert();
 --invert-hover: invert(0.6);
---btn-hover: #7a7a7a;
+--btn-hover: #b1b1b1;
 --text-hover: white;
---nav-hover: #7a7a7a;
+--nav-hover: #b1b1b1;
 --landing-src: url("../public/wave-dark.jpg");
 --go-top-src: url("../public/go-top-light.svg");
 --theme-switch-icon-src: url(../public/sun-small.png);
 --sidebar-theme-switch: url(../public/moon-small.png);
---sidebar-button-bg: #0c0c0c;
+--sidebar-bg: #0c0c0cef;
+--sidebar-toggle: #2d2d2d;
 --module-bg: #141414ca;
 }
 
@@ -67,7 +68,7 @@ body {
 
 h1 {
     font-size: 1.4em;
-    text-shadow: #0c0c0c 1px 1px 2px;
+    text-shadow: #0c0c0c 1px 1px 7px;
 }
 
 h2 {
@@ -108,12 +109,12 @@ p {
     width: min-content;
     text-transform: uppercase;
     padding: 0;
-    text-shadow: #0c0c0c 1px 1px 5px;
+    text-shadow: #0c0c0c 1px 2px 7px;
 }
 
-.Section-Container {
+.section-container {
     max-width: 1180px;
-    margin: 0 auto;
+    margin: 0.5rem auto 15rem auto;
 }
 
 .Headers-Right {
@@ -201,6 +202,7 @@ a {
     cursor: pointer;
     color: var(--text-color);
     width:min-content;
+    text-shadow: #0c0c0c 1px 1px 2px;
 }
 
 .navbar-list a:link {
@@ -256,20 +258,21 @@ a {
 
 /* ~~~~~~ SIDEBAR ~~~~~~ */
 
-.Sidebar-container {
+.sidebar-container {
     display: none;
 }
 
 .sidebar {
     position: absolute;
     display: none;
-    top: 64.5px;
+    padding-top: 64.5px;
+    top: 0;
     right: 0;
     height: 100%;
     width: 100vw;
     transition: left 0.3s ease-in-out;
-    background-color: var(--btn-color);
-    z-index: 2;
+    background-color: var(--sidebar-bg);
+    z-index: 1;
     opacity: 0.95;
   }
   .sidebar-toggle {
@@ -277,7 +280,7 @@ a {
     display: none;
     top: 0;
     right: 0px;
-    z-index: 1;
+    z-index: 2;
     border: none;
     background-color: transparent;
     color: var(--btn-color);
@@ -312,7 +315,7 @@ a {
   }
 
   .sidebar a {
-    color: var(--bkg-color);
+    color: var(--btn-color);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -328,8 +331,7 @@ a {
   }
 
   .sidebar-toggle:hover {
-    background-color: var(--text-color);
-    color: var(--bkg-color);
+    background-color: var(--sidebar-toggle);
   }
 
   .sidebar-heading {
@@ -447,10 +449,6 @@ a {
     width: 90vw;
 }
 
-#bio {
-    padding-top: 3rem;
-}
-
 .bio {
     display: flex;
     justify-content: center;
@@ -507,6 +505,14 @@ a {
     margin-right: 2rem;
 }
 
+.bio-buttons p {
+    margin-top: 0.5rem;
+    font-size: 1em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding-left: 0.2rem;
+}
+
 .bio-buttons a {
     margin: 0 2rem;
     display: flex;
@@ -553,10 +559,9 @@ a {
 /* ~~~~~~ SKILLS section ~~~~~~  */
 
 .skills-container {
-    height: 900px;
+    /* height: 900px; */
     max-width: 1180px;
     width: 90%;
-    margin-bottom: 5rem;
     /* background-color: var(--module-bg); */
     display: flex;
     flex-direction: column;
@@ -591,7 +596,7 @@ a {
 }
 
 .skill-icons {
-    font-size: 3.3em;
+    font-size: 3em;
     font-weight: 800;
     letter-spacing: 2px;
     display: flex;
@@ -599,7 +604,7 @@ a {
     justify-content: center;
     align-items: center;
     opacity: 0.9;
-    margin: 0 auto;
+    margin: 4rem auto 8rem auto;
 }
 
 .skill-icons i:hover {
@@ -619,7 +624,7 @@ a {
     align-items: center;
     margin: 10px;
     padding: 10px;
-    flex-basis: 20%;
+    flex-basis: 18%;
 }
 
 .after-effects p {
@@ -640,7 +645,14 @@ a {
     display: flex;
     justify-content: center;
     align-items: start;
-    margin-bottom: 12rem;
+    margin-bottom: 8rem;
+}
+
+.project-last-single-container {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin-bottom: 0rem;
 }
 
 .project-image-container{
@@ -698,7 +710,7 @@ a {
     margin: 0;
     margin-bottom: 1rem;
 
-    font-size: 1.9em;
+    font-size: 1.5em;
 
     letter-spacing: 1.25px;
     text-decoration: none;
@@ -787,7 +799,7 @@ a {
     height: 2.5rem;
 
     margin-left: 2rem;
-    padding: 0.35rem 0.5rem;
+    padding: 0.2rem 0.3rem;
 
     display: flex;
     text-align: center;
@@ -802,7 +814,7 @@ a {
     font-size: 0.9em;
 
     font-family: Stigfier;
-    font-size: 1.2em;
+    font-size: 1em;
     font-weight: 900;
 }
 
@@ -857,16 +869,7 @@ a {
     width: 1050px;
 } 
 
-#projects {
-    padding-top: 10rem;
-}
-
 /* ~~~~~~ CONTACT ~~~~~~  */
-
-.contact-container {
-    margin: 15rem auto;
-    padding-bottom: 5rem;
-}
 
 .contact-items {
     display: flex;
@@ -1032,7 +1035,7 @@ a {
 /* Design */
 
 #design {
-    padding-top: 10rem;
+    /* padding-top: 10rem; */
 }
 
 .design-section{
@@ -1053,11 +1056,13 @@ a {
 
 .design-title{
     font-weight: bold;
-    font-size: larger;
+    font-size: 1.3em;
+    text-transform: uppercase;
     margin: 2rem 0 0.75rem 0;
     padding: 0;
     letter-spacing: 1px;
     border-bottom: 0.5px solid var(--btn-color);
+    text-shadow: #0c0c0c 1px 1px 2px;
 }
 
 .design-project p {
@@ -1115,14 +1120,6 @@ a {
 }
 
 /* ~~~~~~~~~~~~ Responsiveness ~~~~~~~~~~~~  */
-@media screen and (max-width: 1200px) {
-    #land-bg,
-    #land-bg2 {
-        object-fit:cover;
-        object-position: 70% 72%;
-    }
-  }
-
 @media screen and (max-width: 1000px) {
   .goTop__text  {
     right: 1.5rem;
@@ -1133,7 +1130,7 @@ a {
 }
 
   @media screen and (max-width: 900px) {
-    .Bio {
+    .bio {
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -1145,36 +1142,34 @@ a {
         width: 288px;
         height: 288px;
     }
-    .Bio-items {
+    .bio-items {
         margin: 0;
         justify-content: center;
         align-items: center;
     }
-    .Bio-items p {
+    .bio-items p {
         width: 90vw;
         font-size: 1.1em;
     }
-    .resume-section p {
+    .bio-buttons p {
         font-size: 0.85em;
     }
-    .resume-section {
+    .bio-buttons {
         margin-top: 1rem;
         justify-content:center ;
     }
-    .resume-section img {   
+    .bio-buttons img {   
         margin: 0 1rem;
     }
-    .resume-section button {
+    .bio-buttons button {
         margin: 0 1rem;
     }
-    .Bio-Container {
+    .bio-container {
         margin-bottom: 0rem;
         height: auto;
     }
     .skills-container {
         width: 95vw;
-        height: auto;
-        margin-top: 5rem;
     }
     .skill {
         margin: 0.75rem;
@@ -1182,17 +1177,11 @@ a {
     .skill-icons {
         font-size: 2.5em;
     }
-    .Section-Container {
-        margin: 2rem 0;
-    }
-    .Section-Container {
-        height: auto;
-    }
-    #projects {
-        padding-top: 5rem;
-    }
     .project-single-container {
         margin-bottom: 5rem;
+    }
+    .section-container {
+        margin: 0.5rem auto 12rem auto;
     }
     .section-line {
         margin-bottom: 2rem;
@@ -1202,20 +1191,20 @@ a {
         justify-content: center;
         align-items: center;
     }
-    .Work-Preview {
+    .project-image {
         width: 90%;
         display: flex;
         justify-content: center;
         margin: 0 auto;
         margin-bottom: 5rem;
     }
-    .Work-Details {
-        max-width: 90%;
+    .project-details {
+        width: 88%;
         display: flex;
         flex-direction: column;
         justify-content: center;
     }
-    .resume-section a {
+    .bio-buttons a {
         max-width: 5rem;
     }
   }
@@ -1225,13 +1214,13 @@ a {
     .project-text {
         margin: 0;
     }
-    .Work-Details p {
+    .project-details p {
         font-size: 1.1em;
     }
     .navbar-items {
         display: none;
     }
-    .Sidebar-container {
+    .sidebar-container {
         display: inherit;
     }
     #theme-switch-icon {
@@ -1250,10 +1239,9 @@ a {
     .left-of-nav {
         width: 100vw;
         height: 64.5px;
-        background-color: var(--bkg-color);
         opacity: 0.95
       }
-    .resume-section a {
+    .bio-buttons a {
         margin: 0 1rem;
     }
   }
@@ -1266,16 +1254,16 @@ a {
     .Landing-Text h2 {
         font-size: 3.5vw;
     }
-    .resume-section p {
+    .bio-buttons p {
         font-size: 0.7rem;
     }
-    .resume-section {
+    .bio-buttons {
         margin-right: 0;
     }
-    .resume-section a {
+    .bio-buttons a {
         margin: 0 0.4rem;
     }
-    .resume-section img {
+    .bio-buttons img {
         width: 35px;
         height: 35px;
     }

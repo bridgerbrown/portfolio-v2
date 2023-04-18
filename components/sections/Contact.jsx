@@ -11,7 +11,7 @@ function Contact() {
 
     return (
       <>
-        <section className="contact-container Section-container" id="contact">
+        <section className="section-container" id="contact">
             <div className='section-line'>
               <Image 
                 src={"/star1.png"} 

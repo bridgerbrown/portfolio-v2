@@ -40,7 +40,7 @@ function About() {
 
   return(
     <>
-      <section className='bio-Container' id="bio">
+      <section className='bio-container section-container' id="bio">
           <div className='section-line'>
             <Image 
               src={"/star1.png"} 

@@ -13,14 +13,6 @@ function Navbar(props) {
         <nav className='Navs'>
             <div className='left-of-nav'>
                 <div className='sidebar-heading'>
-                    <Image 
-                        src={'/sun-small.png'}
-                        alt='switch to dark theme'
-                        onClick={props.themeChange}
-                        id='sidebar-switch-icon'
-                        width="25"
-                        height="25"
-                    />
                 </div>
             </div>
             <div className='Navbar'>

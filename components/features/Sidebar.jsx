@@ -6,18 +6,21 @@ const Sidebar = props => {
 
   return (
     <>
-        <nav className="Sidebar-container">
+        <nav className="sidebar-container">
             <button onClick={props.toggleSidebar} className="sidebar-toggle">
             ☰
             </button>
             <div className={sidebarClass}>
-                <a href="#bio">
+                <a href="#bio" onClick={props.toggleSidebar}>
                     About
                 </a>
-                <a href="#projects">
+                <a href="#projects" onClick={props.toggleSidebar}>
                     Projects
                 </a>
-                <a href="#contact">
+                <a href="#design" onClick={props.toggleSidebar}>
+                    Design
+                </a>
+                <a href="#contact" onClick={props.toggleSidebar}>
                     Contact
                 </a>
             </div>
