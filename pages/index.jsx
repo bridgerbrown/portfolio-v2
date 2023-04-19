@@ -9,9 +9,9 @@ import Contact from "../components/sections/Contact"
 import Design from "../components/sections/Design";
 import { useState, useEffect, useRef } from "react";
 import GoTop from "../components/features/GoTop";
-import * as THREE from 'three'
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls'
-import { RGBELoader } from 'three/examples/jsm/loaders/RGBELoader'
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
+import { RGBELoader } from 'three/addons/loaders/RGBELoader.js'
 
 function Home() {
     // const [darkTheme, setDarkTheme] = useState()
