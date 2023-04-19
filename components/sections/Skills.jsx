@@ -7,7 +7,7 @@ function Skills() {
             <div>
                 <div className='section-line'>
                     <Image 
-                        src={"/star1.png"} 
+                        src={"/star1.png"} a
                         className="swirls"
                         width={25}
                         height={25}
@@ -36,67 +36,67 @@ function Skills() {
             </div>
             <div className="skill-icons">
                 <div className="skill">          
-                    <i class="devicon-javascript-plain"></i>
+                    <i className="devicon-javascript-plain"></i>
                     <p>JAVASCRIPT</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-typescript-original"></i>
+                    <i className="devicon-typescript-original"></i>
                     <p>TYPESCRIPT</p>
                 </div>
                 <div className="skill">     
-                    <i class="devicon-react-original"></i>
+                    <i className="devicon-react-original"></i>
                     <p>REACT</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-nextjs-original"></i>
+                    <i className="devicon-nextjs-original"></i>
                     <p>NEXT.JS</p>
                 </div>
                 <div className="skill">
-                    <i class="devicon-html5-plain"></i>
+                    <i className="devicon-html5-plain"></i>
                     <p>HTML</p>
                 </div>
                 <div className="skill">  
-                    <i class="devicon-css3-plain"></i>
+                    <i className="devicon-css3-plain"></i>
                     <p>CSS</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-jest-plain"></i>
+                    <i className="devicon-jest-plain"></i>
                     <p>JEST</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-nodejs-plain"></i>
+                    <i className="devicon-nodejs-plain"></i>
                     <p>NODEJS</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-tailwindcss-plain"></i>
+                    <i className="devicon-tailwindcss-plain"></i>
                     <p>TAILWIND CSS</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-mongodb-plain"></i>
+                    <i className="devicon-mongodb-plain"></i>
                     <p>MONGODB</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-redux-plain"></i>
+                    <i className="devicon-redux-plain"></i>
                     <p>REDUX</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-threejs-original"></i>
+                    <i className="devicon-threejs-original"></i>
                     <p>THREE.JS</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-git-plain"></i>
+                    <i className="devicon-git-plain"></i>
                     <p>GIT</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-wordpress-plain"></i>
+                    <i className="devicon-wordpress-plain"></i>
                     <p>WORDPRESS</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-photoshop-plain"></i>
+                    <i className="devicon-photoshop-plain"></i>
                     <p>PHOTOSHOP</p>
                 </div>
                 <div className="skill">       
-                    <i class="devicon-illustrator-plain"></i>
+                    <i className="devicon-illustrator-plain"></i>
                     <p>ILLUSTRATOR</p>
                 </div>
             </div>

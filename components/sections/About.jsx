@@ -73,7 +73,7 @@ function About() {
                 />
               <div className="bio-items reveal-right">  
                   <h5 className='bio-heading-line'>
-                    My name is Bridger Brown and I am a Front-End Developer and Designer based out of Portland, Oregon.
+                    Hello! My name is Bridger Brown and I am a <br></br>Front-End Developer and Designer based out of Portland, Oregon.
                   </h5>                  
                   <p>
                       I am a creative developer who is always trying to improve my craft by

@@ -207,10 +207,16 @@ function Home() {
                 <About />
                 <Skills />
                 <Projects />
+              </div>
+              {/* <section className="blank-animation-space"></section> */}
+              <div className="blur-bg">
                 <Design />
                 <Contact />
-                <Footer />
               </div>
+              <section className="blank-animation-space">
+                <h5 className="footer-text">Designed and Built by Bridger Brown</h5>
+              </section>
+              {/* <Footer /> */}
             </main>            
         </>
     )

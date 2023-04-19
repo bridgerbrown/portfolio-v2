@@ -30,8 +30,8 @@ canvas {
 }
 
 .top-bg{
-    background-image: linear-gradient(#14141414 0%, var(--module-bg));
-    padding-bottom: 20rem;
+    background-image: linear-gradient(#14141430 70%, var(--module-bg));
+    padding-bottom: 25rem;
 }
 
 .blur-bg{
@@ -42,6 +42,16 @@ canvas {
     align-items: center;
     justify-content: center;
     background-color: var(--module-bg);
+}
+
+.blank-animation-space {
+    height: 100vh;
+    width: 100vw;
+    z-index: 10;
+    background-image: linear-gradient(var(--module-bg) 0%, #14141430 30%, #14141430 100%);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 body {
@@ -458,7 +468,7 @@ a {
 }
 
 .bio-items {
-    margin-left: 1rem;
+    margin-left: 0rem;
     width: 60%;
     display: flex;
     flex-direction: column;
@@ -476,9 +486,10 @@ a {
 }
 
 .bio-heading-line {
-    font-size: 1.6em;
-    margin: 0 auto 1rem auto;
+    font-size: 1.4em;
+    margin: 0 0 1rem 0;
     line-height: 1.25;
+    width: 1000px;
 }
 
 .bio-items h2 {
@@ -700,14 +711,14 @@ a {
 .project-single-container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 8rem;
 }
 
 .project-last-single-container {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     margin-bottom: 0rem;
 }
 
@@ -1006,10 +1017,11 @@ a {
 
 /* ~~~~~~ FOOTER ~~~~~~  */
 
-.Footer {
+.footer-text {
     margin: 5rem auto 2rem auto;
+    bottom: 0;
 }
-
+/* 
 .Footer h5 {
     margin: 0.8rem auto;
 }
@@ -1018,7 +1030,7 @@ a {
     display: flex;
     justify-content: center;
     padding-right: 1rem;
-}
+} */
 
 .Social-Icons {
     cursor: pointer;
