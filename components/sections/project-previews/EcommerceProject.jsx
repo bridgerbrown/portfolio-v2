@@ -8,7 +8,7 @@ function EcommerceProject() {
                 <div className='project-image-container'>
                     <a href='https://ecommerce-paintings.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <Image 
-                            src={'/ecommerce-preview.jpg' }
+                            src={'/ecommerce-preview.jpg'}
                             alt="ecommerce paintings project preview" 
                             className='project-image reveal-left'
                             width={1280}
@@ -31,7 +31,7 @@ function EcommerceProject() {
                             <br/>
                             <br/>
                             This project was made using <span>React</span>, <span>NextJS</span> (server-side and static rendering), <span>Firestore</span> database, <span>Firebase</span> user authentication and 
-                            the art database of the <span>Art Institute of Chicago's public API</span>. 
+                            the art database of the <span>Art Institute of Chicago&apos;s public API</span>. 
                         </p>
                     </div>
                     <div className='project-buttons'>
