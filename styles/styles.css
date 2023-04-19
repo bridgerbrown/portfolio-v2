@@ -64,7 +64,6 @@ body {
 --btn-hover: #b1b1b1;
 --text-hover: white;
 --nav-hover: #b1b1b1;
---landing-src: url("../public/wave-dark.jpg");
 --go-top-src: url("../public/go-top-light.svg");
 --theme-switch-icon-src: url(../public/sun-small.png);
 --sidebar-theme-switch: url(../public/moon-small.png);
@@ -414,7 +413,6 @@ a {
     padding: 0;
     margin: 0;
     z-index: -1;    
-    /* content: var(--landing-src) */
 }
 
 .fade {
