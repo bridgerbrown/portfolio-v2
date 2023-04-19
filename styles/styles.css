@@ -30,7 +30,7 @@ canvas {
 }
 
 .top-bg{
-    background-image: linear-gradient(#1414144b 0%, var(--module-bg));
+    background-image: linear-gradient(#14141414 0%, var(--module-bg));
     padding-bottom: 20rem;
 }
 
@@ -61,6 +61,8 @@ body {
 --sidebar-bg: #0c0c0cef;
 --sidebar-toggle: #2d2d2d;
 --module-bg: #141414ca;
+--active-category:
+--inactive-category:
 }
 
 
@@ -327,11 +329,11 @@ a {
 
   .sidebar a:hover {
     background-color: var(--bkg-color);
-    color: var(--text-color);
+    color: #565656;
   }
 
   .sidebar-toggle:hover {
-    background-color: var(--sidebar-toggle);
+    color: #565656;
   }
 
   .sidebar-heading {
@@ -456,8 +458,8 @@ a {
 }
 
 .bio-items {
-    margin-left: 2rem;
-    width: 55%;
+    margin-left: 1rem;
+    width: 60%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
@@ -471,6 +473,12 @@ a {
 
 #bio-img {
     margin-right: 2rem;
+}
+
+.bio-heading-line {
+    font-size: 1.6em;
+    margin: 0 auto 1rem auto;
+    line-height: 1.25;
 }
 
 .bio-items h2 {
@@ -555,6 +563,54 @@ a {
     background-color: var(--btn-hover);
     color: var(--text-hover);
 }
+
+.resume-div button {
+    width: 8rem;
+    height: 3rem;
+    margin-bottom: 2.5rem;
+    margin-right: 1rem;
+    font-weight: 900;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    font-family: Stigfier;
+    background-color: var(--btn-color);
+}
+
+.bio-text-link {
+    border-bottom: white 1px solid;
+    cursor: pointer;
+}
+
+.bio-text-link:hover {
+    color: var(--btn-hover);
+    border-bottom: var(--btn-hover) 1px solid;
+}
+
+/* .bio-category-buttons {
+    display: flex;
+    justify-content: end
+}
+
+.bio-category-buttons button {
+    width: 8rem;
+    height: 3rem;
+    border: rgb(174, 174, 174) 1px solid;
+    border-radius: 5px;
+    color: white;
+    font-size: 1em;
+    font-family: Stigfier;
+    background: none;
+}
+
+.bio-category-buttons p {
+    font-size: 1.5em;
+    position: relative;
+    left: 1rem;
+    top: 0.3rem;
+    text-shadow: none;
+    font-weight: 100;
+} */
 
 /* ~~~~~~ SKILLS section ~~~~~~  */
 
@@ -1186,7 +1242,7 @@ a {
     .section-line {
         margin-bottom: 2rem;
     }
-    .project-single-container {
+    .project-single-container, .project-last-single-container {
         flex-direction: column;
         justify-content: center;
         align-items: center;

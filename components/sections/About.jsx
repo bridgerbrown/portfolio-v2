@@ -71,23 +71,35 @@ function About() {
                 width={352}
                 height={352}
                 />
-              <div className="bio-items reveal-right">                    
-                  <p>Hello, my name is Bridger Brown and I am a Front-End Web developer and designer based out of Portland, Oregon.
-                  <br></br>
-                      <br></br> 
-                      Websites are an interactive art form and I am passionate about creating that experience through a designers eye.
-                      I love working towards the pursuit of mastery in whatever I pursue and with the
-                      deep ceiling for growth and possibilities, I enjoy developing my craft in programming.
+              <div className="bio-items reveal-right">  
+                  <h5 className='bio-heading-line'>
+                    My name is Bridger Brown and I am a Front-End Developer and Designer based out of Portland, Oregon.
+                  </h5>                  
+                  <p>
+                      I am a creative developer who is always trying to improve my craft by
+                      learning new technologies and building new projects.
+                      Websites are an interactive art form and I am passionate about creating that functional experience with a designers eye.
                       <br></br>
                       <br></br>
-                      I am also a musician that graduated from Berklee College of Music in 2016 with a Bachelors in Guitar Performance.
-                      I am very passionate about music, art, keyboards, and self-improvement.
+                      I attended the <a href="https://scrimba.com/" target="_blank" rel="noopener noreferrer" className='bio-text-link'>Scrimba Front-End Developer Bootcamp</a>
+                      , multiple <a target="_blank" rel="noopener noreferrer" href="https://www.schoolofmotion.com/" className='bio-text-link'>School of Motion</a> design courses, and 
+                      am a graduate of <a target="_blank" rel="noopener noreferrer" href="https://www.berklee.edu/" className='bio-text-link'>Berklee College of Music</a> with a Bachelors in Performance.
+                      <br></br>
+                      <br></br>
+                      I am also very passionate about music, mindfulness, and keyboards (I type in DVORAK on a split keyboard using VIM commands).
                   </p>
-                  {/* <div className='bio-other-buttons'>
-                    <button>Education</button>
-                    <button>Music</button>
-                  </div> */}
+                  {/* <div className='bio-category-buttons'>
+                      <button>Education</button>
+                      <p>&#62;</p>
+                  </div>  */}
                   <div className='bio-buttons'>
+                    <div className='resume-div'>
+                        <button className='resume-button'
+                          onClick={() => window.open('/Bridger_Brown_Resume.pdf')}
+                        >
+                          Resume
+                        </button>
+                    </div> 
                     <a href='https://www.linkedin.com/in/bridger-brown/' target="_blank" rel="noopener noreferrer" >
                       <Image 
                         src={"/LinkedIN_black.png"} 
