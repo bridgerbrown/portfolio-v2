@@ -7,7 +7,7 @@ function Skills() {
             <div>
                 <div className='section-line'>
                     <Image 
-                        src={"/star1.png"} a
+                        src={"/star1.png"}
                         className="swirls"
                         width={25}
                         height={25}

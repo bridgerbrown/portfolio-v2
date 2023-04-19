@@ -95,7 +95,7 @@ function About() {
                   <div className='bio-buttons'>
                     <div className='resume-div'>
                         <button className='resume-button'
-                          onClick={() => window.open('/Bridger_Brown_Resume.pdf')}
+                          onClick={() => window.open('/Bridger_Brown_Resume_2023.pdf')}
                         >
                           Resume
                         </button>

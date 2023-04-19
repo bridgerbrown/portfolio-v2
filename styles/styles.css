@@ -30,7 +30,7 @@ canvas {
 }
 
 .top-bg{
-    background-image: linear-gradient(#14141430 70%, var(--module-bg));
+    background-image: linear-gradient(#1414144f 70%, var(--module-bg));
     padding-bottom: 25rem;
 }
 
@@ -937,6 +937,10 @@ a {
 } 
 
 /* ~~~~~~ CONTACT ~~~~~~  */
+
+#contact {
+    padding-bottom: 5rem;
+}
 
 .contact-items {
     display: flex;
