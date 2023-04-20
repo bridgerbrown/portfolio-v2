@@ -65,7 +65,7 @@ function Home() {
     
         const controls = new OrbitControls(camera, renderer.domElement);
     
-        new RGBELoader().load( 'sky-bw.hdr', function ( texture ) {
+        new RGBELoader().load( 'sky-bw_1.hdr', function ( texture ) {
           texture.mapping = THREE.EquirectangularReflectionMapping;
           scene.background = texture;
           scene.environment = texture;

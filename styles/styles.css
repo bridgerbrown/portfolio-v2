@@ -522,6 +522,12 @@ a {
     margin-right: 2rem;
 }
 
+.bio-social-buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 0rem;
+}
+
 .bio-buttons p {
     margin-top: 0.5rem;
     font-size: 1em;
@@ -1226,7 +1232,8 @@ a {
     }
     .bio-buttons {
         margin-top: 1rem;
-        justify-content:center ;
+        justify-content: center;
+        flex-direction: column;
     }
     .bio-buttons img {   
         margin: 0 1rem;
@@ -1237,6 +1244,14 @@ a {
     .bio-container {
         margin-bottom: 0rem;
         height: auto;
+        width: 90vw;
+    }
+    .bio-heading-line {
+        font-size: 1.2em;
+        width: 90vw;
+    }
+    .bio-social-buttons {
+        margin-top: 2rem;
     }
     .skills-container {
         width: 95vw;

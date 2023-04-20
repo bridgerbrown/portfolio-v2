@@ -34,7 +34,7 @@ function Skills() {
                     .
                 </p> */}
             </div>
-            <div className="skill-icons">
+            <div className="skill-icons fade-in">
                 <div className="skill">          
                     <i className="devicon-javascript-plain"></i>
                     <p>JAVASCRIPT</p>

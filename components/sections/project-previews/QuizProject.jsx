@@ -10,13 +10,13 @@ function QuizProject() {
                         <Image 
                             src={'/quizzical-preview.jpg'}
                             alt="quiz project preview" 
-                            className='project-image reveal-left'
+                            className='project-image fade-in'
                             width={1280}
                             height={960}
                             />
                     </a>
                 </div>
-                <div className='project-details reveal-right'>
+                <div className='project-details'>
                 <div className='project-text'>
                     <a href='https://quiz-o8z5ipsoe-bridgerbrown.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <h4 className='project-title'>Quiz App</h4>

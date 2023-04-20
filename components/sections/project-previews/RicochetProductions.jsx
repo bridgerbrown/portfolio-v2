@@ -10,13 +10,13 @@ function RicochetProductionsProject() {
                         <Image 
                             src={'/ricochet-productions-preview.jpg' }
                             alt="ricochet productions project preview" 
-                            className='project-image reveal-left'
+                            className='project-image fade-in'
                             width={1280}
                             height={960}
                             />
                     </a>
                 </div>
-                <div className='project-details reveal-right'>
+                <div className='project-details fade-in'>
                     <div className='project-text'>
                         <a href='https://ecommerce-paintings.vercel.app/' target="_blank" rel="noopener noreferrer">
                             <h4 className='project-title'>RicochetProductions.com</h4>
