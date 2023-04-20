@@ -11,7 +11,7 @@ import { useState, useEffect, useRef } from "react";
 import GoTop from "../components/features/GoTop";
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
-import { RGBELoader } from 'three/addons/loaders/RGBELoader.js'
+import { TextureLoader } from 'three'
 import Head from "next/head";
 
 function Home() {
@@ -46,18 +46,15 @@ function Home() {
           camera.position.setY(60);
           camera.position.setZ(0);
           camera.lookAt(0, 0, 0);
-          // camera.setFocalLength(30)
-          // camera.fov = 37
-          // camera.updateProjectionMatrix();
-    
+
         const renderer = new THREE.WebGLRenderer({
           canvas: document.querySelector('#canvasBg'),
           antialias: true,
         })
         renderer.setPixelRatio(window.devicePixelRatio);
         renderer.setSize(window.innerWidth, window.innerHeight);
-        renderer.outputEncoding = THREE.sRGBEncoding;
-        renderer.toneMapping = THREE.ACESFilmicToneMapping;
+        // renderer.outputEncoding = THREE.sRGBEncoding;
+        // renderer.toneMapping = THREE.ACESFilmicToneMapping;
     
         window.addEventListener( 'resize', onWindowResized );
     
@@ -66,7 +63,7 @@ function Home() {
     
         const controls = new OrbitControls(camera, renderer.domElement);
     
-        new RGBELoader().load( 'sky-bw-sm.hdr', function ( texture ) {
+        new TextureLoader().load( 'sky-bw-sm-comp.png', function ( texture ) {
           texture.mapping = THREE.EquirectangularReflectionMapping;
           scene.background = texture;
           scene.environment = texture;
@@ -119,7 +116,6 @@ function Home() {
             start: 0,
             end: 40,
             func: () => {
-            // centerSphere.rotation.y += 0.002;
               const distance = 0 + window.scrollY / 60;
         
               orbitingSpheres[0].position.set(distance * Math.sin((2 * Math.PI * 0) / 3), 0, distance * Math.cos((2 * Math.PI * 0) / 3));
@@ -137,7 +133,6 @@ function Home() {
             start: 40,
             end: 101,
             func: () => {
-              // centerSphere.rotation.y += 0.002;
               const stoppingDistance = 25
               let distance = (0 + window.scrollY / 60) * (1 - scalePercent(40, 101))
               if (distance < stoppingDistance) {
@@ -199,7 +194,9 @@ function Home() {
         <>
             <main className="Home fade" id="home" ref={refScrollUp}>
               <Head>Bridger Brown Dev</Head>
-              <canvas id="canvasBg" loading="eager"></canvas>
+              <div className="canvas-filter">
+                <canvas id="canvasBg" loading="eager"></canvas>
+              </div>
               <div className="top-bg">
                 <Navbar /> 
                 <GoTop />

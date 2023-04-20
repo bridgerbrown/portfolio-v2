@@ -31,6 +31,7 @@ canvas {
 
 .top-bg{
     background-image: linear-gradient(#1414144f 70%, var(--module-bg));
+    /* mix-blend-mode: overlay; */
     padding-bottom: 25rem;
 }
 
@@ -43,6 +44,16 @@ canvas {
     justify-content: center;
     background-color: var(--module-bg);
 }
+
+.canvas-filter {
+    /* mix-blend-mode: overlay; */
+    /* background-color: #141414; */
+}
+
+/* #canvas-bg {
+    mix-blend-mode: darken;
+    background-color: #0c0c0c;
+} */
 
 .blank-animation-space {
     height: 100vh;
