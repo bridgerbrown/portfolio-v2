@@ -12,6 +12,7 @@ import GoTop from "../components/features/GoTop";
 import * as THREE from 'three';
 import { OrbitControls } from 'three/addons/controls/OrbitControls.js'
 import { RGBELoader } from 'three/addons/loaders/RGBELoader.js'
+import Head from "next/head";
 
 function Home() {
     // const [darkTheme, setDarkTheme] = useState()
@@ -197,6 +198,7 @@ function Home() {
     return(
         <>
             <main className="Home fade" id="home" ref={refScrollUp}>
+              <Head>Bridger Brown Dev</Head>
               <canvas id="canvasBg" loading="eager"></canvas>
               <div className="top-bg">
                 <Navbar /> 
