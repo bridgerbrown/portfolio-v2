@@ -197,7 +197,7 @@ function Home() {
     return(
         <>
             <main className="Home fade" id="home" ref={refScrollUp}>
-              <canvas id="canvasBg"></canvas>
+              <canvas id="canvasBg" loading="eager"></canvas>
               <div className="top-bg">
                 <Navbar /> 
                 <GoTop />
