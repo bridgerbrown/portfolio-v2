@@ -26,13 +26,6 @@ function Skills() {
                         alt="swirl icon"
                     />
                 </div>
-                {/* <p className="currently-learning">I am currently learning...
-                    <span>
-                        <i class="devicon-python-plain" id="currently-icon"></i>
-                        Python
-                    </span>
-                    .
-                </p> */}
             </div>
             <div className="skill-icons fade-in">
                 <div className="skill">          

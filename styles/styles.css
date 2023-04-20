@@ -769,6 +769,7 @@ a {
 .project-text {
     display: flex;
     flex-direction: column;
+    justify-content: center;
     align-items: flex-start;
     margin-left: 4rem;
 }
@@ -1187,9 +1188,7 @@ a {
     font-family: Stigfier;
     src:
          url('/fonts/stigfier/Stigfier.woff') format('woff'),
-         url('/fonts/stigfier/Stigfier.woff2') format('woff2'),
-         url('/fonts/stigfier/Stigfier.ttf') format('truetype'),
-         url('/fonts/stigfier/Stigfier.otf') format('opentype');
+         url('/fonts/stigfier/Stigfier.woff2') format('woff2');
     font-weight: 400;
     font-style: normal;
     font-display: swap;
@@ -1288,9 +1287,13 @@ a {
         display: flex;
         flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
     .bio-buttons a {
         max-width: 5rem;
+    }
+    .ReadMore {
+        margin: 0 1rem;
     }
   }
   
@@ -1328,6 +1331,9 @@ a {
       }
     .bio-buttons a {
         margin: 0 1rem;
+    }
+    .design-project {
+        margin: 2rem 1rem;
     }
   }
 
@@ -1367,7 +1373,7 @@ a {
         }
         .coming-soon-bg {
             position: relative;
-            top: -23px;
+            top: -18px;
         }
         .design-images{
             width: 300px;

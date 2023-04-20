@@ -53,10 +53,6 @@ function About() {
                       <br></br>
                       I am also very passionate about music, mindfulness, and keyboards (I type in DVORAK on a split keyboard using VIM commands).
                   </p>
-                  {/* <div className='bio-category-buttons'>
-                      <button>Education</button>
-                      <p>&#62;</p>
-                  </div>  */}
                   <div className='bio-buttons'>
                     <div className='resume-div'>
                         <button className='resume-button'
@@ -107,7 +103,6 @@ function About() {
                           <p>Music</p>
                       </a>
                     </div>
-                    {/* <button>Resume</button> */}
                   </div>
               </div> 
           </div>

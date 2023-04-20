@@ -23,8 +23,6 @@ function PayCats() {
                         </a>
                         <div>
                             <h3 className='project-subtitle'>SOLO-PROJECT</h3>
-                            {/* <h3 className='coming-soon'>Coming Soon...</h3>
-                            <h3 className='coming-soon-bg'>Coming Soon...</h3> */}
                         </div>
                         <p className='project-description'>
                             PayCats is a Venmo/Paypal clone with a database of cat users you can securely sign up, pay and request money from. Like Venmo,
