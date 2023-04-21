@@ -30,7 +30,7 @@ canvas {
 }
 
 .top-bg{
-    background-image: linear-gradient(#1414144f 70%, var(--module-bg));
+    background-image: linear-gradient(transparent 0%, var(--module-bg));
     /* mix-blend-mode: overlay; */
     padding-bottom: 25rem;
 }
@@ -80,7 +80,7 @@ body {
 --sidebar-theme-switch: url(../public/moon-small.png);
 --sidebar-bg: #0c0c0cef;
 --sidebar-toggle: #2d2d2d;
---module-bg: #141414ca;
+--module-bg: #141414e3;
 --active-category:
 --inactive-category:
 }
@@ -136,7 +136,7 @@ p {
 
 .section-container {
     max-width: 1180px;
-    margin: 0.5rem auto 15rem auto;
+    margin: 0.5rem auto 25rem auto;
 }
 
 .Headers-Right {
@@ -498,7 +498,6 @@ a {
     font-size: 1.4em;
     margin: 0 0 1rem 0;
     line-height: 1.25;
-    width: 1000px;
 }
 
 .bio-items h2 {
@@ -742,7 +741,7 @@ a {
 }
 
 .project-image {
-    max-width: 30rem;
+    max-width: 28rem;
     width: 30vw;
     height: 100%;
     cursor: pointer;
@@ -1206,22 +1205,26 @@ a {
 }
 
 /* ~~~~~~~~~~~~ Responsiveness ~~~~~~~~~~~~  */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 1050px) {
   .goTop__text  {
     right: 1.5rem;
     }
     .design-section{
         flex-direction: column;
     }
-}
-
-  @media screen and (max-width: 900px) {
     .bio {
         flex-direction: column;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
+    #bio-img {
+        margin-bottom: 3rem;
+        margin-right: 0;
+    }
+}
+
+  @media screen and (max-width: 900px) {
     #bio-img {
         margin-bottom: 3rem;
         margin-right: 0;
@@ -1257,7 +1260,7 @@ a {
         width: 90vw;
     }
     .bio-heading-line {
-        font-size: 1.2em;
+        font-size: 1.1em;
         width: 90vw;
     }
     .bio-social-buttons {
@@ -1280,6 +1283,9 @@ a {
     }
     .section-line {
         margin-bottom: 2rem;
+    }
+    .section-title {
+        font-size: 1.9em;
     }
     .project-single-container, .project-last-single-container {
         flex-direction: column;
@@ -1387,8 +1393,8 @@ a {
             top: -18px;
         }
         .design-images{
-            width: 300px;
-            height: 300px;
+            width: 250px;
+            height: 250px;
         }
     }
 

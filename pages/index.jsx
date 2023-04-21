@@ -15,37 +15,24 @@ import { TextureLoader } from 'three'
 import Head from "next/head";
 
 function Home() {
-    // const [darkTheme, setDarkTheme] = useState()
-
-    // useEffect(() => {   
-    //     const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)').matches
-
-    //     if(prefersDarkScheme) {
-    //         document.body.classList.toggle("light-theme");
-    //         setDarkTheme(prefersDarkScheme)
-    //     } else {
-    //         document.body.classList.toggle("dark-theme");
-    //         setDarkTheme(prefersDarkScheme)
-    //     }
-    // },[darkTheme] )
-
-    // function themeChange() {
-    //     if(darkTheme) {
-    //         document.body.classList.toggle("light-theme");
-    //         setDarkTheme(!darkTheme)
-    //     } else {
-    //         document.body.classList.toggle("dark-theme");
-    //         setDarkTheme(!darkTheme)
-    //     }
-    // };
+  const [isMobile, setIsMobile] = useState(false);
 
     useEffect(() => {
         const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000, );
+        let camera
+        if (isMobile) {
+          camera = new THREE.PerspectiveCamera(80, window.innerWidth / window.innerHeight, 0.1, 1000, );
           camera.position.setX(60);
           camera.position.setY(60);
           camera.position.setZ(0);
           camera.lookAt(0, 0, 0);
+        } else {
+          camera = new THREE.PerspectiveCamera(50, window.innerWidth / window.innerHeight, 0.1, 1000, );
+          camera.position.setX(60);
+          camera.position.setY(60);
+          camera.position.setZ(0);
+          camera.lookAt(0, 0, 0);
+        }
 
         const renderer = new THREE.WebGLRenderer({
           canvas: document.querySelector('#canvasBg'),
@@ -175,7 +162,18 @@ function Home() {
           renderer.setSize( window.innerWidth, window.innerHeight );
           camera.aspect = window.innerWidth / window.innerHeight;
           camera.updateProjectionMatrix();
+          if(isMobile){
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+          }
+          updateIsMobile()
         }
+
+        function updateIsMobile() {
+          setIsMobile(window.innerWidth < 800)
+        }
+
+        updateIsMobile()
     
         function animate() {
           cubeCamera.update( renderer, scene );
@@ -186,7 +184,7 @@ function Home() {
         }
         animate();
     
-      }, [])
+      }, [isMobile])
 
     const refScrollUp = useRef();
 
