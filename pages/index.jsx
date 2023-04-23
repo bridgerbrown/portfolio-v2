@@ -20,6 +20,11 @@ function Home() {
   useEffect(() => {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1.2;
+
+      function updateIsMobile() {
+        setIsMobile(window.innerWidth < 800)
+      }
+      updateIsMobile()
       
       let camera = isMobile
         ? new THREE.PerspectiveCamera(
@@ -46,11 +51,6 @@ function Home() {
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(window.innerWidth, window.innerHeight);
       window.addEventListener( 'resize', onWindowResized );
-
-      function updateIsMobile() {
-        setIsMobile(window.innerWidth < 800)
-      }
-      updateIsMobile()
   
       function onWindowResized() {
         renderer.setSize( window.innerWidth, window.innerHeight );
@@ -62,14 +62,6 @@ function Home() {
         }
         updateIsMobile()
       }
-
-      // const textureLoader = new TextureLoader();
-      // textureLoader.load( 'sky-orange-contrast.png', function (texture){
-      //   texture.mapping = THREE.EquirectangularReflectionMapping;
-      //   scene.background = texture;
-      //   scene.environment = texture;
-      //   renderer.render(scene, camera);
-      // });
   
       const controls = new OrbitControls(camera, renderer.domElement);
   
@@ -94,7 +86,7 @@ function Home() {
           new THREE.TextureLoader().load(url, resolve)
         })
       }
-      
+
       loadTexture('sky-orange-contrast.png').then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
@@ -106,7 +98,6 @@ function Home() {
           const sphere = new THREE.Mesh(new THREE.IcosahedronGeometry( 15, 8 ), material );
           orbitingSpheres.push(sphere);
           centerSphere.add(sphere);
-          // Position the sphere around the center sphere
           const angle = (2 * Math.PI * i) / 3;
           sphere.position.set(15 * Math.sin(angle), 0, 15 * Math.cos(angle));
         }
