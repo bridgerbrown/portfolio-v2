@@ -29,7 +29,7 @@ function About() {
           </div>
           <div className="bio">  
               <Image 
-                src={"/cortona-headshot.png"}
+                src={"/b-cortona-sm.png"}
                 alt="bridger headshot image" 
                 className='fade-in' 
                 id='bio-img'

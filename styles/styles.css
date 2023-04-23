@@ -76,8 +76,6 @@ body {
 --text-hover: white;
 --nav-hover: #b1b1b1;
 --go-top-src: url("../public/go-top-light.svg");
---theme-switch-icon-src: url(../public/sun-small.png);
---sidebar-theme-switch: url(../public/moon-small.png);
 --sidebar-bg: #0c0c0cef;
 --sidebar-toggle: #2d2d2d;
 --module-bg: #141414e3;
