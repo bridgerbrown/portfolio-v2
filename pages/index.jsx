@@ -19,7 +19,7 @@ function Home() {
 
   useEffect(() => {
     const isInstagramBrowser = navigator.userAgent.includes('Instagram');
-    if (isInstagramBrowser) {
+    if (!isInstagramBrowser) {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1;
 
