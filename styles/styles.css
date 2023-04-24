@@ -1289,14 +1289,16 @@ a {
         align-items: center;
     }
     .project-image {
-        width: 90%;
+        width: 90vw;
+        max-width: 90vw;
         display: flex;
         justify-content: center;
         margin: 0 auto;
-        margin-bottom: 5rem;
+        margin-bottom: 2rem;
     }
     .project-details {
-        width: 88%;
+        width: 90vw;
+        max-width: 90vw;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1307,6 +1309,9 @@ a {
     }
     .ReadMore {
         margin: 0 1rem;
+    }
+    #smaller-project-title {
+        font-size: 1.2em;
     }
   }
   
@@ -1348,6 +1353,9 @@ a {
     .design-project {
         margin: 2rem 1rem;
     }
+    /* .project-description {
+        width: 90vw;
+    } */
   }
 
   @media screen and (max-width: 700px) {
@@ -1388,7 +1396,7 @@ a {
   }
 
   @media only screen 
-    and (min-device-width: 375px) 
+    and (min-device-width: 320px) 
     and (max-device-width: 812px) 
     and (-webkit-min-device-pixel-ratio: 3) {
         html, body {
@@ -1417,6 +1425,9 @@ a {
             z-index: -1;
             width: 100%;
             overflow-x: hidden;
+        }
+        .project-title{
+            font-size: 1em;
         }
     }
 

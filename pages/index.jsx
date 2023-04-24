@@ -18,7 +18,7 @@ function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    // const isInstagramBrowser = navigator.userAgent.includes('Instagram');
+    const isInstagramBrowser = navigator.userAgent.includes('Instagram');
     // if (!isInstagramBrowser) {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1;
@@ -50,7 +50,7 @@ function Home() {
         canvas: document.querySelector('#canvasBg'),
         antialias: false,
       })
-      renderer.setPixelRatio(window.devicePixelRatio);
+      isInstagramBrowser ? renderer.setPixelRatio(1) : renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(window.innerWidth, window.innerHeight);
       window.addEventListener( 'resize', onWindowResized );
   
