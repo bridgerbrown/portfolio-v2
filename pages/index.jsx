@@ -18,8 +18,8 @@ function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
-    const isInstagramBrowser = navigator.userAgent.includes('Instagram');
-    if (isInstagramBrowser) {
+    // const isInstagramBrowser = navigator.userAgent.includes('Instagram');
+    // if (!isInstagramBrowser) {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1;
 
@@ -185,10 +185,10 @@ function Home() {
         }
         animate();
       })
-    } else {
-      document.getElementById('canvasBg').style.display = 'none';
-      document.getElementById('static-bg').style.display = 'fixed';
-    }
+    // } else {
+    //   document.getElementById('canvasBg').style.display = 'none';
+    //   document.getElementById('static-bg').style.display = 'fixed';
+    // }
     }, [isMobile])
 
   const refScrollUp = useRef();
@@ -197,7 +197,7 @@ function Home() {
         <>
             <main className="Home fade" id="home" ref={refScrollUp}>
               <Head>Bridger Brown Dev</Head>
-              <div id="static-bg"></div>
+              {/* <div id="static-bg"></div> */}
               <canvas id="canvasBg" loading="eager"></canvas>
               <div className="top-bg">
                 <Navbar /> 
