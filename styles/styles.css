@@ -1421,3 +1421,16 @@ a {
     top: 0;
     left: 0;
 }
+
+#static-bg {
+    content: url('../public/ig-bg.png');
+    position: fixed;
+    left: 0;
+    top: 0;
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    padding: 0; 
+    margin: 0;  
+    background-size: cover;
+}

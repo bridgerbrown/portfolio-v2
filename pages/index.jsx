@@ -19,7 +19,7 @@ function Home() {
 
   useEffect(() => {
     const isInstagramBrowser = navigator.userAgent.includes('Instagram');
-    if (!isInstagramBrowser) {
+    if (isInstagramBrowser) {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1;
 
@@ -187,27 +187,7 @@ function Home() {
       })
     } else {
       document.getElementById('canvasBg').style.display = 'none';
-      document.body.style.backgroundImage = "url('ig-bg.png')";
-      document.body.style.backgroundPosition = "center center";
-      document.body.style.backgroundRepeat = "no-repeat";
-      document.body.style.backgroundSize = "auto 100vh";
-      document.body.style.backgroundAttachment = "fixed";
-      
-      document.body.style.webkitBackgroundSize = "auto 100vh";
-      document.body.style.MozBackgroundSize = "auto 100vh";
-      document.body.style.msBackgroundSize = "auto 100vh";
-      document.body.style.OBackgroundSize = "auto 100vh";
-      
-      document.body.style.webkitBackgroundAttachment = "fixed";
-      document.body.style.MozBackgroundAttachment = "fixed";
-      document.body.style.msBackgroundAttachment = "fixed";
-      document.body.style.OBackgroundAttachment = "fixed";
-      
-      document.body.style.webkitBackgroundPosition = "center center";
-      document.body.style.MozBackgroundPosition = "center center";
-      document.body.style.msBackgroundPosition = "center center";
-      document.body.style.OBackgroundPosition = "center center";
-      
+      document.getElementById('static-bg').style.display = 'fixed';
     }
     }, [isMobile])
 
@@ -217,6 +197,7 @@ function Home() {
         <>
             <main className="Home fade" id="home" ref={refScrollUp}>
               <Head>Bridger Brown Dev</Head>
+              <div id="static-bg"></div>
               <canvas id="canvasBg" loading="eager"></canvas>
               <div className="top-bg">
                 <Navbar /> 
