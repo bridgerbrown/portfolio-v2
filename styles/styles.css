@@ -1405,7 +1405,7 @@ a {
     }
 
 .instagram-browser {
-    background-image: url('ig-bg.png');
+    background-image: url('/ig-bg.png');
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
