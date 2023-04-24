@@ -1373,6 +1373,10 @@ a {
         width: 35px;
         height: 35px;
     }
+    html, body {
+        width: 100%;
+        overflow-x: hidden;
+    }
   }
 
   @media only screen 
@@ -1393,6 +1397,10 @@ a {
         .design-images{
             width: 250px;
             height: 250px;
+        }
+        .bio-heading-line {
+            font-size: 1em;
+            width: 90vw;
         }
     }
 

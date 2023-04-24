@@ -18,6 +18,8 @@ function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    const isInstagramBrowser = navigator.userAgent.includes('Instagram');
+    if (!isInstagramBrowser) {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1.1;
 
@@ -28,13 +30,13 @@ function Home() {
       
       let camera = isMobile
         ? new THREE.PerspectiveCamera(
-            80,
+            70,
             window.innerWidth / window.innerHeight,
             0.1,
             1000
           )
         : new THREE.PerspectiveCamera(
-            50,
+            60,
             window.innerWidth / window.innerHeight,
             0.1,
             1000
@@ -183,6 +185,10 @@ function Home() {
         }
         animate();
       })
+    } else {
+      document.getElementById('canvasBg').style.display = 'none'
+      document.getElementById('home').style.backgroundImage = 'url("ig-bg.png")'
+    }
     }, [isMobile])
 
   const refScrollUp = useRef();
