@@ -21,7 +21,7 @@ function Home() {
     const isInstagramBrowser = navigator.userAgent.includes('Instagram');
     if (!isInstagramBrowser) {
       const scene = new THREE.Scene();
-      scene.backgroundIntensity = 1.1;
+      scene.backgroundIntensity = 1;
 
       function updateIsMobile() {
         setIsMobile(window.innerWidth < 800)
@@ -90,7 +90,7 @@ function Home() {
         })
       }
 
-      loadTexture('sky-o-mute.png').then((texture) => {
+      loadTexture('sky-m-o.png').then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
         scene.environment = texture;

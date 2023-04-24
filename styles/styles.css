@@ -1407,8 +1407,6 @@ a {
 .instagram-browser {
     background-image: url('../public/ig-bg.png');
     background-size: object-fit;
-    min-height: 100%;
-    background-attachment: fixed;
     background-repeat: no-repeat;
     background-position: center;
 }
