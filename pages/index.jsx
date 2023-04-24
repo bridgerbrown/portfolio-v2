@@ -46,7 +46,7 @@ function Home() {
 
       const renderer = new THREE.WebGLRenderer({
         canvas: document.querySelector('#canvasBg'),
-        antialias: true,
+        antialias: false,
       })
       renderer.setPixelRatio(window.devicePixelRatio);
       renderer.setSize(window.innerWidth, window.innerHeight);
@@ -80,6 +80,7 @@ function Home() {
         roughness: 0,
         metalness: 1.1,
       } );
+
 
       function loadTexture(url) {
         return new Promise(resolve => {
