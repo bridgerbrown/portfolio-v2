@@ -90,7 +90,7 @@ function Home() {
         })
       }
 
-      loadTexture('sky-m-o.png').then((texture) => {
+      loadTexture('sky-vo.png').then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
         scene.environment = texture;
