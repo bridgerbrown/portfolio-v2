@@ -88,7 +88,7 @@ function Home() {
         })
       }
 
-      loadTexture('sky-orange-contrast.png').then((texture) => {
+      loadTexture('sky-o-darkest.png').then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
         scene.environment = texture;
