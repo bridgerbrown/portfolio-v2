@@ -187,7 +187,11 @@ function Home() {
       })
     } else {
       document.getElementById('canvasBg').style.display = 'none'
-      document.getElementById('home').classList.add('instagram-browser')
+      document.body.style.backgroundImage = "url('../public/ig-bg.png')";
+      document.body.style.backgroundPosition = "center center";
+      document.body.style.backgroundRepeat = "no-repeat";
+      document.body.style.backgroundSize = "auto 100vh";
+      document.body.style.backgroundAttachment = "fixed";
     }
     }, [isMobile])
 
