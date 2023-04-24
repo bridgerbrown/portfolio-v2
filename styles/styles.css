@@ -1411,24 +1411,13 @@ a {
         }
     }
 
-.instagram-browser {
-    background-image: url('../public/ig-bg.png');
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: auto 100vh;
-    background-attachment: fixed;
-    height: 100vh;
-    top: 0;
-    left: 0;
-}
-
 #static-bg {
     content: url('../public/ig-bg.png');
     position: fixed;
-    left: 0;
     top: 0;
     object-fit: cover;
-    width: 100vw;
+    object-position: center;
+    width: 500px;
     height: 100vh;
     padding: 0; 
     margin: 0;  
