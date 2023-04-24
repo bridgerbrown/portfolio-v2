@@ -19,7 +19,7 @@ function Home() {
 
   useEffect(() => {
     const isInstagramBrowser = navigator.userAgent.includes('Instagram');
-    if (!isInstagramBrowser) {
+    if (isInstagramBrowser) {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1;
 
@@ -187,7 +187,7 @@ function Home() {
       })
     } else {
       document.getElementById('canvasBg').style.display = 'none'
-      document.body.style.backgroundImage = "url('../public/ig-bg.png')";
+      document.body.style.backgroundImage = "url('ig-bg.png')";
       document.body.style.backgroundPosition = "center center";
       document.body.style.backgroundRepeat = "no-repeat";
       document.body.style.backgroundSize = "auto 100vh";
