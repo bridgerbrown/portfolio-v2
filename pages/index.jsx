@@ -187,7 +187,7 @@ function Home() {
       })
     } else {
       document.getElementById('canvasBg').style.display = 'none'
-      document.getElementById('home').style.backgroundImage = 'url("ig-bg.png")'
+      document.getElementById('home').classList.add('instagram-browser')
     }
     }, [isMobile])
 
