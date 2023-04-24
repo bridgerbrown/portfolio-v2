@@ -90,7 +90,7 @@ function Home() {
         })
       }
 
-      loadTexture('sky-vo.png').then((texture) => {
+      loadTexture('sky-vo2.png').then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
         scene.environment = texture;
@@ -195,7 +195,7 @@ function Home() {
 
     return(
         <>
-            <main className="Home fade instagram-browser" id="home" ref={refScrollUp}>
+            <main className="Home fade" id="home" ref={refScrollUp}>
               <Head>Bridger Brown Dev</Head>
               <canvas id="canvasBg" loading="eager"></canvas>
               <div className="top-bg">
