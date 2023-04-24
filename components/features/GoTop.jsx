@@ -20,7 +20,7 @@ const GoTop = (props) => {
         <div className={ showGoTop ? '' : "goTopHidden" } onClick={ handleScrollUp }>
             <button type={'button'} className="goTop">
                 <Image
-                    src={"/go-top-dark.svg"}
+                    src={"/go-top-light.svg"}
                     alt="go to top of page"
                     width={50}
                     height={50}
