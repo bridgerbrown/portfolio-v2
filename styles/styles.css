@@ -1413,16 +1413,9 @@ a {
 
 .instagram-browser {
     background-image: url('../public/ig-bg.png');
-    background-position: 100vh;
-    -webkit-background-position: 100vh;
-    -moz-background-position: 100vh;
-    -o-background-position: 100vh;
-    background-attachment: fixed;
-    -webkit-background-attachment: fixed;
-    -moz-background-attachment: fixed;
-    -o-background-attachment: fixed;
+    background-position: center center;
     background-repeat: no-repeat;
-    -webkit-background-repeat: no-repeat;
-    -moz-background-repeat: no-repeat;
-    -o-background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-attachment: fixed;
+    height: 100vh;
 }
