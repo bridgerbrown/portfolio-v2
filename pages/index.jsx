@@ -19,7 +19,7 @@ function Home() {
 
   useEffect(() => {
       const scene = new THREE.Scene();
-      scene.backgroundIntensity = 1.2;
+      scene.backgroundIntensity = 1.3;
 
       function updateIsMobile() {
         setIsMobile(window.innerWidth < 800)
@@ -88,7 +88,7 @@ function Home() {
         })
       }
 
-      loadTexture('sky-o-darkest.png').then((texture) => {
+      loadTexture('sky-o-dark.png').then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
         scene.environment = texture;
