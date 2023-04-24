@@ -1377,6 +1377,13 @@ a {
         width: 100%;
         overflow-x: hidden;
     }
+    .Landing-Text {
+        top: 0
+    }
+    .Landing-Text h1 {
+        margin-top: 1.5rem;
+        font-size: 2em;
+    }
   }
 
   @media only screen 
@@ -1406,7 +1413,7 @@ a {
 
 .instagram-browser {
     background-image: url('../public/ig-bg.png');
-    background-size: object-fit;
+    background-size: contain;
+    background-attachment: fixed;
     background-repeat: no-repeat;
-    background-position: center;
 }
