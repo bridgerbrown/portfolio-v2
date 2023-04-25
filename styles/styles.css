@@ -1370,6 +1370,9 @@ a {
     /* .project-description {
         width: 90vw;
     } */
+    .contact-items p {
+        font-size: 1.1em;
+    }
   }
 
   @media screen and (max-width: 700px) {
@@ -1405,10 +1408,14 @@ a {
         font-size: 2em;
     }
     .Landing-Text h2 {
-        font-size: 1.5em;
+        font-size: 1em;
     }
     .bio-buttons {
         flex-direction: column-reverse
+    }
+    .Footer-Text {
+        font-size: 0.7em;
+        font-weight: 400;
     }
   }
 
