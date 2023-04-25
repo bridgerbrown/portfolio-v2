@@ -1447,6 +1447,13 @@ a {
         .project-title{
             font-size: 1em;
         }
+        .Landing-Text h1 {
+            margin-top: 1.5rem;
+            font-size: 2em;
+        }
+        .Landing-Text h2 {
+            font-size: 1.5em;
+        }
     }
 
 #static-bg {

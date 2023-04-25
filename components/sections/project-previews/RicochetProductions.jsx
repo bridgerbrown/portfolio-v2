@@ -21,10 +21,10 @@ function RicochetProductionsProject() {
                         <a href='https://ecommerce-paintings.vercel.app/' target="_blank" rel="noopener noreferrer">
                             <h4 className='project-title' id='smaller-project-title'>RicochetProductions.com</h4>
                         </a>
-                        {/* <div>
+                        <div>
                             <h3 className='coming-soon'>FREELANCE (in development)</h3>
                             <h3 className='coming-soon-bg'>FREELANCE (in development)</h3>
-                        </div> */}
+                        </div>
                         <p className='project-description'>
                             This is a freelance website currently in development for the company Ricochet Productions.
                             <br/>
