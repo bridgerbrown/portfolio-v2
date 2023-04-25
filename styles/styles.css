@@ -313,6 +313,7 @@ a {
     width: 64.5px;
     height: 64.5px;
     cursor: pointer;
+    text-shadow: #0c0c0c 1px 1px 2px;
   }
   .content {
     position: absolute;
@@ -699,6 +700,7 @@ a {
     font-size: 0.3em;
     font-family: serenity;
     font-weight: 300;
+    text-align: center;
 }
 
 .skill {
@@ -1378,7 +1380,6 @@ a {
   @media screen and (max-width: 700px) {
     .Landing-Text h1 {
         margin-top: 2rem;
-        font-size: 9vw;
     }
     .Landing-Text h2 {
         font-size: 3.5vw;
@@ -1457,10 +1458,10 @@ a {
         .Landing-Text h1 {
             margin-top: 1.5rem;
             font-size: 2em;
-            text-shadow: #0c0c0c 2px 2px 2px;
+            text-shadow: #0c0c0c 1px 1px 2px;
         }
         .Landing-Text h2 {
-            font-size: 1em;
+            font-size: 0.8em;
         }
     }
 
