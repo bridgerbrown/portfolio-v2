@@ -89,7 +89,7 @@ body {
 
 h1 {
     font-size: 1.4em;
-    text-shadow: #0c0c0c 1px 1px 7px;
+    text-shadow: #0c0c0c 2px 2px 2px;
 }
 
 h2 {
@@ -217,7 +217,7 @@ a {
     margin: 0;
     padding-bottom: 0rem;
     list-style: none;
-    font-size: 1em;
+    font-size: 1.1em;
     letter-spacing: 3px;
     text-transform: uppercase;
     cursor: pointer;
@@ -685,6 +685,10 @@ a {
     align-items: center;
     opacity: 0.9;
     margin: 4rem auto 8rem auto;
+}
+
+.skill-icons i{
+    opacity: 0.9;
 }
 
 .skill-icons i:hover {
@@ -1221,6 +1225,16 @@ a {
         margin-bottom: 3rem;
         margin-right: 0;
     }
+    .Landing-Text h1 {
+        margin-top: 1.5rem;
+        font-size: 3em;
+    }
+    .Landing-Text h2 {
+        font-size: 1.25em;
+    }
+    .navbar-list a {
+        font-size: 1em;
+    }
 }
 
   @media screen and (max-width: 900px) {
@@ -1281,7 +1295,7 @@ a {
         margin-bottom: 2rem;
     }
     .section-title {
-        font-size: 1.9em;
+        font-size: 1.7em;
     }
     .project-single-container, .project-last-single-container {
         flex-direction: column;
@@ -1390,6 +1404,9 @@ a {
         margin-top: 1.5rem;
         font-size: 2em;
     }
+    .Landing-Text h2 {
+        font-size: 1.5em;
+    }
     .bio-buttons {
         flex-direction: column-reverse
     }
@@ -1417,6 +1434,7 @@ a {
         .bio-heading-line {
             font-size: 1em;
             width: 90vw;
+            line-height: 1.5em;
         }
         canvas {
             position: fixed;

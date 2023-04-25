@@ -30,7 +30,7 @@ function Home() {
       
       let camera = isMobile
         ? new THREE.PerspectiveCamera(
-            70,
+            80,
             window.innerWidth / window.innerHeight,
             0.1,
             1000
@@ -90,7 +90,7 @@ function Home() {
         })
       }
 
-      loadTexture('sky-vo2.png').then((texture) => {
+      loadTexture('sky-orangest.png').then((texture) => {
         texture.mapping = THREE.EquirectangularReflectionMapping;
         scene.background = texture;
         scene.environment = texture;
