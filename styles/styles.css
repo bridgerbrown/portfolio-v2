@@ -1450,10 +1450,10 @@ a {
         .Landing-Text h1 {
             margin-top: 1.5rem;
             font-size: 2em;
-            text-shadow: #0c0c0c 1px 1px 2px;
+            text-shadow: #0c0c0c 2px 2px 2px;
         }
         .Landing-Text h2 {
-            font-size: 1.5em;
+            font-size: 1em;
         }
     }
 
