@@ -60,7 +60,7 @@ canvas {
     height: 100vh;
     width: 100vw;
     z-index: 10;
-    background-image: linear-gradient(var(--module-bg) 0%, #14141430 30%, #14141430 100%);
+    background-image: linear-gradient(var(--module-bg) 0%, #141414d1 30%, #141414d1 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -79,7 +79,7 @@ body {
 --go-top-src: url("../public/go-top-light.svg");
 --sidebar-bg: #0c0c0cef;
 --sidebar-toggle: #2d2d2d;
---module-bg: #141414e3;
+--module-bg: #141414d1;
 --active-category:
 --inactive-category:
 }
