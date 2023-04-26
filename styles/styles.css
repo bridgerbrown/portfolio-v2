@@ -32,12 +32,10 @@ canvas {
 
 .top-bg{
     background-image: linear-gradient(rgba(255, 255, 255, 0.064) 50%, var(--module-bg) 100%);
-    /* mix-blend-mode: overlay; */
     padding-bottom: 25rem;
 }
 
 .blur-bg{
-    /* backdrop-filter: blur(2px); */
     width: 100%;
     display: flex;
     flex-direction: column;
@@ -45,16 +43,6 @@ canvas {
     justify-content: center;
     background-color: var(--module-bg);
 }
-
-.canvas-filter {
-    /* mix-blend-mode: overlay; */
-    /* background-color: #141414; */
-}
-
-/* #canvas-bg {
-    mix-blend-mode: darken;
-    background-color: #0c0c0c;
-} */
 
 .blank-animation-space {
     height: 100vh;
@@ -147,8 +135,6 @@ p {
 }
 
 .swirls {
-    /* width: 2rem;
-    height: 2rem; */
     margin: 0 1.5rem;
     opacity: 0.8;
     filter: var(--invert);
@@ -466,7 +452,6 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
-    /* background-color: var(--module-bg); */
     width: 90vw;
 }
 
@@ -612,38 +597,11 @@ a {
     border-bottom: var(--btn-hover) 1px solid;
 }
 
-/* .bio-category-buttons {
-    display: flex;
-    justify-content: end
-}
-
-.bio-category-buttons button {
-    width: 8rem;
-    height: 3rem;
-    border: rgb(174, 174, 174) 1px solid;
-    border-radius: 5px;
-    color: white;
-    font-size: 1em;
-    font-family: Stigfier;
-    background: none;
-}
-
-.bio-category-buttons p {
-    font-size: 1.5em;
-    position: relative;
-    left: 1rem;
-    top: 0.3rem;
-    text-shadow: none;
-    font-weight: 100;
-} */
-
 /* ~~~~~~ SKILLS section ~~~~~~  */
 
 .skills-container {
-    /* height: 900px; */
     max-width: 1180px;
     width: 90%;
-    /* background-color: var(--module-bg); */
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -1045,16 +1003,6 @@ a {
     margin: 5rem auto 2rem auto;
     bottom: 0;
 }
-/* 
-.Footer h5 {
-    margin: 0.8rem auto;
-}
-
-.Footer-Icons {
-    display: flex;
-    justify-content: center;
-    padding-right: 1rem;
-} */
 
 .Social-Icons {
     cursor: pointer;
@@ -1125,10 +1073,6 @@ a {
 
 
 /* Design */
-
-#design {
-    /* padding-top: 10rem; */
-}
 
 .design-section{
     display: flex;
