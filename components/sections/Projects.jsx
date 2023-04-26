@@ -5,6 +5,7 @@ import QuizProject from '../sections/project-previews/QuizProject'
 import Image from 'next/image'
 import PayCats from './project-previews/Paycats'
 import RicochetProductionsProject from './project-previews/RicochetProductions'
+import SpheresProject from './project-previews/SpheresProject'
 
 function Projects() {
     return(
@@ -33,6 +34,7 @@ function Projects() {
                 </div>
                 <div className='all-projects-container'>
                     <RicochetProductionsProject />
+                    <SpheresProject />
                     <PayCats />
                     <EcommerceProject />
                     <QuizProject />

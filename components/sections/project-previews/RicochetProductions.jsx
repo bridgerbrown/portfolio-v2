@@ -6,7 +6,7 @@ function RicochetProductionsProject() {
         <>
             <div className='project-single-container'>
                 <div className='project-image-container'>
-                    <a href='https://ecommerce-paintings.vercel.app/' target="_blank" rel="noopener noreferrer">
+                    <a href='https://ricochet-productions.vercel.app/' target="_blank" rel="noopener noreferrer">
                         <Image 
                             src={'/ricochet-productions-preview.jpg' }
                             alt="ricochet productions project preview" 
@@ -18,7 +18,7 @@ function RicochetProductionsProject() {
                 </div>
                 <div className='project-details fade-in'>
                     <div className='project-text'>
-                        <a href='https://ecommerce-paintings.vercel.app/' target="_blank" rel="noopener noreferrer">
+                        <a href='https://ricochet-productions.vercel.app/' target="_blank" rel="noopener noreferrer">
                             <h4 className='project-title' id='smaller-project-title'>RicochetProductions.com</h4>
                         </a>
                         <div>
