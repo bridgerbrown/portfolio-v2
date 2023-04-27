@@ -57,10 +57,6 @@ function Skills() {
                     <p>JEST</p>
                 </div>
                 <div className="skill">       
-                    <i className="devicon-nodejs-plain"></i>
-                    <p>NODEJS</p>
-                </div>
-                <div className="skill">       
                     <i className="devicon-tailwindcss-plain"></i>
                     <p>TAILWIND CSS</p>
                 </div>
@@ -69,20 +65,8 @@ function Skills() {
                     <p>MONGODB</p>
                 </div>
                 <div className="skill">       
-                    <i className="devicon-redux-plain"></i>
-                    <p>REDUX</p>
-                </div>
-                <div className="skill">       
                     <i className="devicon-threejs-original"></i>
                     <p>THREE.JS</p>
-                </div>
-                <div className="skill">       
-                    <i className="devicon-git-plain"></i>
-                    <p>GIT</p>
-                </div>
-                <div className="skill">       
-                    <i className="devicon-wordpress-plain"></i>
-                    <p>WORDPRESS</p>
                 </div>
                 <div className="skill">       
                     <i className="devicon-photoshop-plain"></i>
