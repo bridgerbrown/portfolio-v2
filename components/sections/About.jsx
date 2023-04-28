@@ -51,7 +51,7 @@ function About() {
                       am a graduate of <a target="_blank" rel="noopener noreferrer" href="https://www.berklee.edu/" className='bio-text-link'>Berklee College of Music</a> with a Bachelors in Performance.
                       <br></br>
                       <br></br>
-                      I am also very passionate about music, mindfulness, and keyboards (I type in DVORAK on a split keyboard using VIM commands).
+                      I am also very passionate about music, mindfulness, and keyboards.
                   </p>
                   <div className='bio-buttons'>
                     <div className='resume-div'>
