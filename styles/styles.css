@@ -31,7 +31,7 @@ canvas {
 }
 
 .top-bg{
-    background-image: linear-gradient(rgba(255, 255, 255, 0.02) 50%, var(--module-bg) 100%);
+    background-image: linear-gradient(rgba(255, 255, 255, 0.04) 50%, var(--module-bg) 100%);
     padding-bottom: 25rem;
 }
 

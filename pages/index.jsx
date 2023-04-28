@@ -21,7 +21,7 @@ function Home() {
     const isInstagramBrowser = navigator.userAgent.includes('Instagram');
     // if (!isInstagramBrowser) {
       const scene = new THREE.Scene();
-      scene.backgroundIntensity = 1.3;
+      scene.backgroundIntensity = 1.2;
 
       function updateIsMobile() {
         setIsMobile(window.innerWidth < 800)
