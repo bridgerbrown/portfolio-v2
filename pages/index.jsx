@@ -18,15 +18,14 @@ function Home() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
+    function updateIsMobile() {
+      setIsMobile(window.innerWidth < 800)
+    }
+    updateIsMobile()
     const isInstagramBrowser = navigator.userAgent.includes('Instagram');
     // if (!isInstagramBrowser) {
       const scene = new THREE.Scene();
       scene.backgroundIntensity = 1.3;
-
-      function updateIsMobile() {
-        setIsMobile(window.innerWidth < 800)
-      }
-      updateIsMobile()
       
       let camera = isMobile
         ? new THREE.PerspectiveCamera(
