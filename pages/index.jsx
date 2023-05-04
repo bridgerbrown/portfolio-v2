@@ -15,7 +15,7 @@ import { TextureLoader } from 'three'
 import Head from "next/head";
 
 function Home() {
-  const [isMobile, setIsMobile] = useState(false);
+  const [isMobile, setIsMobile] = useState(typeof window !== 'undefined' && window.innerWidth < 800);
 
   useEffect(() => {
     function updateIsMobile() {
