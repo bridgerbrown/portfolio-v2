@@ -33,10 +33,10 @@ function Projects() {
                     />
                 </div>
                 <div className='all-projects-container'>
-                    <RicochetProductionsProject />
-                    <SpheresProject />
                     <PayCats />
+                    <SpheresProject />
                     <EcommerceProject />
+                    <RicochetProductionsProject />
                     <QuizProject />
                     <MartiniShotWebsite />
                 </div>
