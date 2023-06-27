@@ -31,7 +31,7 @@ function PayCats() {
                             <br/>
                             <br/>
                             This project was made using <span>TypeScript</span>
-                            , <span>Tailwind CSS</span>, <span>React</span>
+                            , <span>React</span>, <span>Tailwind CSS</span>
                             , <span>NextJS</span>, <span>Firestore</span> database
                             , and <span>Firebase</span> user authentication.
                         </p>

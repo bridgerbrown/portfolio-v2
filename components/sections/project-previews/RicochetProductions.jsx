@@ -26,7 +26,8 @@ function RicochetProductionsProject() {
                             <h3 className='coming-soon-bg'>FREELANCE (in development)</h3>
                         </div>
                         <p className='project-description'>
-                            This is a freelance website currently in development for the company Ricochet Productions.
+                            A freelance one-pager website currently in development for the 
+                            company Ricochet Productions. 
                             <br/>
                             <br/>
                             This project was made using <span>React</span>, <span>TypeScript</span>, <span>NextJS</span>, and <span>Tailwind CSS</span>.

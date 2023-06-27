@@ -28,7 +28,7 @@ function Skills() {
                 </div>
                 <p className="currently-learning">I am currently learning...
                     <span>
-                        <i class="devicon-python-plain" id="currently-icon"></i>
+                        <i className="devicon-python-plain" id="currently-icon"></i>
                         Python
                     </span>
                     .
@@ -60,6 +60,10 @@ function Skills() {
                     <p>CSS</p>
                 </div>
                 <div className="skill">       
+                    <i className="devicon-python-plain"></i>
+                    <p>PYTHON</p>
+                </div>
+                <div className="skill">       
                     <i className="devicon-jest-plain"></i>
                     <p>JEST</p>
                 </div>
@@ -70,10 +74,6 @@ function Skills() {
                 <div className="skill">       
                     <i className="devicon-mongodb-plain"></i>
                     <p>MONGODB</p>
-                </div>
-                <div className="skill">       
-                    <i className="devicon-threejs-original"></i>
-                    <p>THREE.JS</p>
                 </div>
                 <div className="skill">       
                     <i className="devicon-photoshop-plain"></i>

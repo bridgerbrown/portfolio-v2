@@ -23,7 +23,8 @@ function SpheresProject() {
                         </a>
                         <h3 className='project-subtitle'>SOLO-PROJECT</h3>
                         <p className='project-description'>
-                            This is a 3D scrolling animation using a mars-themed sky texture and rotating reflective spheres, made using  <span>Three.js</span> and <span>WebGL</span>.
+                            A 3D environment scrolling animation using a 
+                            mars-themed sky texture and rotating reflective spheres, made using <span>Three.js</span> and <span>WebGL</span>.
                         </p>
                     </div>
                     <div className='project-buttons'>

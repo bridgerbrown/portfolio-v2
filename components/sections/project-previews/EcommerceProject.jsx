@@ -27,7 +27,8 @@ function EcommerceProject() {
                         <h3 className='project-subtitle'>SOLO-PROJECT</h3>
 
                         <p className='project-description'>
-                            An eCommerce demo website with features such as a database of dynamically updating products, cart functionality, and email user authentication.
+                            An eCommerce platform pulling products from an API with features such as a database of dynamically updating 
+                            products, cart functionality, and email user authentication.
                             <br/>
                             <br/>
                             This project was made using <span>React</span>, <span>NextJS</span> (server-side and static rendering), <span>Firestore</span> database, <span>Firebase</span> user authentication and 

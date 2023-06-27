@@ -34,8 +34,8 @@ function Projects() {
                 </div>
                 <div className='all-projects-container'>
                     <PayCats />
-                    <SpheresProject />
                     <EcommerceProject />
+                    <SpheresProject />
                     <RicochetProductionsProject />
                     <QuizProject />
                     <MartiniShotWebsite />
